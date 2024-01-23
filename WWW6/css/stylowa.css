@@ -1,0 +1,195 @@
+			body.defaultbackground {background-color: #375f18;}
+			body.custombackground {
+				background-image: url(../img/tłorep.png);
+				background-attachment: fixed;
+				}				
+			h1 	{
+				background-color: #52ec00;
+				text-align: center;
+				font-family: Trebuchet MS;
+				font-size: 60px
+				}
+			h2 	{
+				background-color: #053c00;
+				text-align: center;
+				color: #52ec00 ;
+				font-family: Trebuchet MS;
+				font-size: 40px
+				}
+			p {
+				text-align: justify;
+				font-size: 20px;  
+				color: #ffffff;
+				margin: 0px 60px;
+				}			  
+			h3 {
+				font-size: 60px;  
+				color: #ffffff;
+				margin: 60px 60px 0px 60px;
+				}
+			h4{
+				font-size: 30px;  
+				color: #ffffff;
+				margin: 30px 60px 10px 60px;
+				}
+				
+			.G1 {
+				margin: 10px 60px 10px 60px;
+				font-style: italic;
+			}
+			
+			.right { text-align: right; }
+			.całość { text-align: justify;}
+			  
+			a:link { text-decoration: none; }
+			a:link, a:visited { color: #21afbd ; }
+			a:hover, a:active { color: RoyalBlue  ; }
+			a.this:link, a.this:visited { color: #d3e330 ; }
+			a.this:hover, a.this:active { color: DarkOrange  ; }
+			
+		/*  table { border: 30px solid #5d2300; text-align: center;}
+			
+			td { border: 10px solid DarkOrange; text-align: center; font-size: 50px;} */
+			
+			
+			table.logowanie { border: none; text-align: center;}
+			
+			td.log4_t { border: none; text-align: center; font-size: 17px; background: yellow;}
+			
+			table.gornefunkcje { border: 10px solid black; background: yellow; width: 100%; height: 80px;}
+			
+			td.gornefunkcje { border: 2px solid black; text-align: center; font-size: 17px; background: yellow;}
+
+			.container {
+			  position: relative;
+			  width: 100%;
+			}
+			.container .mappin {
+			  position:absolute; 
+			  background-color: #ffffff; 
+			  border-radius: 50%; 
+			  border: 8px solid black;
+			  padding: 20px;
+			  cursor: pointer;
+			}
+			.container .mappin:active { background-color: #e9f000; }
+			
+/* nomyślny styl obrazków */
+img {
+	border: 15px gray solid;
+	margin: 15px;
+}
+
+			.dolewo { float: left; margin: 15px 15px 15px 0px;}
+			.doprawo { float: right; margin: 15px 0px 15px 15px; }
+			.czysty{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border: none;
+				margin: none;
+			}
+	
+/* trzy zielone bloczki */	
+.test-block {
+	width:200px;
+	border:2px solid rgba(71,236,30,1);
+	background: rgba(71,236,30,0.7);
+	text-align: center;
+	color:#000;
+	padding:20px;	
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+			
+/* budowa nagłowka formularza emailowego */
+.formularz {
+	cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border: 2px solid #3498db;
+	border-radius: 10px;
+    background-color: #174928;
+	color: #2cdece;
+    padding: 20px;
+}
+
+/* styl dla obszaru formularza */
+.formularz-form {
+	width: 100%;
+    margin: auto;
+    border: 2px solid #3498db;
+	border-radius: 10px;
+    background-color: #a1c7c6;
+    padding: 20px;
+}
+
+/* CZĘŚĆ ODPOWIEDZIALNA NA FORMULARZ KONTAKTOWY*/
+
+	/* etykiety na formularzu emailowym */
+	.formularz-label {
+		display: block;
+		margin-bottom: 3px;
+		text-align: left;
+	}
+
+	/* pola  "Temat" i "Email" na formularzu emailowym */
+	.formularz-input{
+		width: 100%;
+		padding: 8px;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+	}
+
+	/* pole "Treść" na formularzu emailowym */
+	.formularz-textarea {
+		width: 100%;
+		margin-bottom: 10px;
+		box-sizing: border-box;
+		height: 150px;
+		resize: vertical;
+	}
+
+	/* przycisk "Wyślij" na formularzu emailowym  */
+	.formularz-submit {
+		cursor: pointer;
+		background-color: #2540a4;
+		color: white;
+		padding: 7px 18px;
+		border: none;
+		border-radius: 5px;
+	}
+
+	/* najechanie na przycisk "Wyślij" na formularzu emailowym */
+	.formularz-submit:hover {
+		background-color: #198c9e;
+	}
+
+/* CZĘŚĆ ODPOWIEDZIALNA NA PERPERUUMMOBILEINATOR*/
+
+	.perpetuumobileinatorometer {
+        font-family: 'Digital-7', sans-serif;
+        background-color: #012201;
+        color: #0f0;
+        padding: 20px;
+        border-radius: 5px;
+        width: 200px;
+        border: 5px solid black;
+    }
+
+    .perpetuumobileinatorometer-napis {
+        font-size: 20px;
+        color: #a5b7a5;
+		background-color: #072a07;
+		border-radius: 5px;
+		border: 2px solid black;
+		width: 250px;
+		padding: 2px
+    }
