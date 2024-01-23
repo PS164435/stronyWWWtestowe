@@ -1,0 +1,497 @@
+/* tło domyślne i statyczny obrazek */
+body.defaultbackground {background-color: #375f18;}
+body.custombackground {
+	background-image: url(../img/tłorep.png);
+	background-attachment: fixed;
+}			
+	
+/* //////////////	tekst, nagłówki ///////////////// */
+h1 	{
+	background-color: #52ec00;
+	text-align: center;
+	font-family: Trebuchet MS;
+	font-size: 60px
+	}
+	
+h2 	{
+	background-color: #053c00;
+	text-align: center;
+	color: #52ec00 ;
+	font-family: Trebuchet MS;
+	font-size: 40px
+}
+
+p {
+	text-align: justify;
+	font-size: 20px;  
+	color: #ffffff;
+	margin: 0px 60px;
+}		
+	  
+h3 {
+	font-size: 60px;  
+	color: #ffffff;
+	margin: 60px 60px 0px 60px;
+}
+
+h4{
+	font-size: 30px;  
+	color: #ffffff;
+	margin: 30px 60px 10px 60px;
+}
+						
+.G1 {
+	margin: 10px 60px 10px 60px;
+	font-style: italic;
+}		
+	
+/* ////////		zmiany kolorów wyboru stron   	///////// */	
+a:link { text-decoration: none; }
+a:link, a:visited { color: #21afbd ; }
+a:hover, a:active { color: RoyalBlue  ; }
+a.this:link, a.this:visited { color: #d3e330 ; }
+a.this:hover, a.this:active { color: DarkOrange  ; }
+		
+
+/* ////////	tabelki	///////// */
+
+/* domyślna tabelka - przydatne przy tworzeniu */
+/*  table { border: 30px solid #5d2300; text-align: center;} 
+td { border: 10px solid DarkOrange; text-align: center; font-size: 50px;}*/
+			
+table.logowanie { border: none; text-align: center;}
+			
+td.log4_t { border: none; text-align: center; font-size: 17px; background: yellow;}
+
+/* ////////	żółty pasek na górze - zegar, kolory tła, logowanie ///////// */
+		
+/* tabelka */	
+table.gornefunkcje { border: 10px solid black; background: yellow; width: 100%; height: 90px;}		
+td.gornefunkcje { border: 2px solid black; text-align: center; font-size: 17px; background: yellow;}
+
+/* przyciski */
+input.gornefunkcje{
+    background-color: black;
+    color: white;
+	font-weight: bold;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+	margin: 0px;
+	
+}
+
+/* styl dla przycisku AdminSite */
+input.gornefunkcje:active,
+input.gornefunkcje:hover{
+	background-color: white;
+    color: black;
+	font-weight: bold;
+    padding: 4px;
+    border: 5px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+	margin: 0px;
+}
+
+
+/* ////////////// mapa z przyciskami ////////////// */
+.container {
+	position: relative;
+	 width: 100%;
+}
+
+.container .mappin {
+	position:absolute; 
+	background-color: #ffffff; 
+	border-radius: 50%; 
+	border: 8px solid black;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.container .mappin:active { background-color: #e9f000; }
+	
+
+	
+/* nomyślny styl obrazków */
+img {
+	border: 15px gray solid;
+	margin: 15px;
+}
+
+	.right { text-align: right; }
+	.całość { text-align: justify;}
+
+    .dolewo { float: left; margin: 15px 15px 15px 0px;}
+	.doprawo { float: right; margin: 15px 0px 15px 15px; }
+	.czysty{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border: none;
+		margin: none;
+	}
+	
+/* trzy zielone bloczki */	
+.test-block {
+	width:200px;
+	border:2px solid rgba(71,236,30,1);
+	background: rgba(71,236,30,0.7);
+	text-align: center;
+	color:#000;
+	padding:20px;	
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	
+/*//////////// CZĘŚĆ ODPOWIEDZIALNA NA FORMULARZ KONTAKTOWY ////////////////*/
+	
+/* budowa nagłowka formularza emailowego */
+.formularz {
+	cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border: 2px solid #3498db;
+	border-radius: 10px;
+    background-color: #174928;
+	color: #2cdece;
+    padding: 20px;
+}
+
+/* styl dla obszaru formularza */
+.formularz-form {
+	width: 100%;
+    margin: auto;
+    border: 2px solid #3498db;
+	border-radius: 10px;
+    background-color: #a1c7c6;
+    padding: 20px;
+}
+
+/* etykiety na formularzu emailowym */
+.formularz-label {
+	display: block;
+	margin-bottom: 3px;
+	text-align: left;
+}
+
+/* pola  "Temat" i "Email" na formularzu emailowym */
+.formularz-input{
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+/* pole "Treść" na formularzu emailowym */
+.formularz-textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	height: 150px;
+	resize: vertical;
+}
+
+/* przycisk "Wyślij" na formularzu emailowym  */
+.formularz-submit {
+	cursor: pointer;
+	background-color: #2540a4;
+	color: white;
+	padding: 7px 18px;
+	border: none;
+	border-radius: 5px;
+}
+
+/* najechanie na przycisk "Wyślij" na formularzu emailowym */
+.formularz-submit:hover {
+	background-color: #198c9e;
+}
+
+/* //////// CZĘŚĆ ODPOWIEDZIALNA NA PERPETUUMMOBILEINATOR /////// */
+
+	/* licznik */
+	.perpetuumobileinatorometer {
+        font-family: 'Digital-7', sans-serif;
+        background-color: #012201;
+        color: #0f0;
+        padding: 20px; 
+        border-radius: 5px;
+        width: 200px;
+        border: 5px solid black;
+		font-size: 40px;
+		font-weight: bold;
+    }
+
+	/* napisy */
+    .perpetuumobileinatorometer-napis {
+        font-size: 20px;
+        color: #a5b7a5;
+		background-color: #072a07;
+		border-radius: 5px;
+		border: 2px solid black;
+		width: 250px;
+		padding: 2px
+    }
+	
+	
+	
+/* /////////////////// listy kategorii /////////////////////////// */
+	
+/* kategorie głowne */
+	.kategoria {
+	background-color: #052b12;
+	padding: 0px 10px;
+	font-size: 30px;  
+	color: #e2d10b;
+	margin: 10px 0px 0px 0px;
+	border: 3px solid black;
+	
+}
+
+/* podkategorie razem, upozorowanie ramki */
+ul {
+    list-style-type: none;
+	background-color: black;
+	color: #cfc014;
+	font-weight: 900;
+	padding: 4px;
+	margin: 0px;
+	
+
+}
+
+/* podkategorie ciemnozielone */
+li:nth-child(odd) {
+    background-color: #082808;
+    color: #cfc014; 
+	padding: 4px;
+	margin: 0px;
+}
+
+/* podkategorie jasnozielone */
+li:nth-child(even) {
+    background-color: #0e450e;
+    color: #cfc014;
+	padding: 4px;
+	margin: 0px;
+}
+
+/* pole interakcji kategorii */
+form.kategorie {
+    width: 95%;
+    background-color: #afb6a2;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+/* tekst */
+label.kategorie {
+    display: block;
+	color: #031724;
+	font-size: 20px;  
+	font-weight: bold;
+}
+
+/* wybór kategorii */
+select.kategorie {
+    width: 99%;
+    padding: 5px;
+    margin: 3px 0px 3px 0px;
+}
+
+/* przyciski */
+input[type="submit"].kategorie {
+    background-color: #031724;
+    color: #ecaeeb;
+	font-weight: bold;
+    padding: 7px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+	width: 32%;
+}
+
+/* ///////////////////  POPUP    ///////////////////*/
+
+/* całokształt */ 
+form.popup {
+	background: #b1eaa1;
+	width: 90%;
+	position: absolute;
+	top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border: 4px solid black; 
+	border-radius: 10px;
+	padding: 5px;
+}
+
+/* wiersze */ 
+tr.popup{
+	width: 100%;
+}
+
+/* lewa rubryka */ 
+td.popupl{	
+	background: #b1eaa1;
+	width: 5%;
+}
+
+/* prawa rubryka */ 
+td.popupp{	
+	background: #b1eaa1;
+	width: 60%;
+}
+
+/* nazwy pól */ 
+label.popup{
+	font-size: 20px;
+	margin: 5px;
+}
+
+/* tytuł tabeli */
+h2.popup {
+	font-size: 30px;
+	text-align: left;
+	background: none;
+	margin: 0px;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	font-family: sans-serif;
+
+}
+/*
+/* pola do wpisania */
+input.popup {
+	width: 99%;
+}
+
+/* pole tekstowe */
+textarea.popup {
+	width: 99%;
+	resize: vertical;
+}
+
+/* przyciski */
+input[type="submit"].popup,
+input[type="button"].popup  {
+    background-color: grey;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 6.7px;
+    cursor: pointer;
+	width: 100px;
+	margin-left: 25px;
+}
+
+/* ///////////////////  TABELA PRODUKTÓW    ///////////////////*/
+
+table.product{
+
+border: 10px solid black; 
+background:#bbc705;"
+}
+
+td.product{	
+	font-size: 17px;
+	background: #6cb287;
+	width: 1%;
+}
+
+th.product{	
+	border: 5px solid #6cb287;
+	font-size: 15px;
+
+}
+
+img.product{
+border:none; 
+max-height: 100px;
+margin: 0px;
+}
+
+a.product{
+color: #bbc705;
+font-weight: bold;
+background: black;
+border-radius: 6px;
+border: 2px solid white;
+}
+
+a:active.product,
+a:hover.product{
+color: #c98000;
+font-weight: bold;
+background: black;
+}
+
+imput.koszyk{
+	background: red;
+}
+
+table.koszyk{
+	background: yellow;
+	border: 5px solid blue;
+	padding: 5px;
+}
+
+table.koszykn{
+	background: #b9bf00;
+	border: 5px solid #061847;
+	padding: 5px;
+	font-size: 40px;
+}
+
+td.koszykn{
+	background: #06473b;
+	padding:5px;
+	color: #b9bf00;
+	font-weight: bold;
+}
+
+td.koszyk{
+	background: #158470;
+	padding:5px;
+	color: yellow;
+	font-weight: bold;
+}
+
+input.koszyk{
+	background: yellow;
+	border: 2px solid blue;
+	border-radius: 7px;
+	cursor: pointer;
+	height: 24px;
+}
+
+input.koszyk:active,
+input.koszyk:hover{
+	background: white;
+	border: 4px solid blue;
+	border-radius: 7px;
+	cursor: pointer;
+	height: 20px;
+}
+
+/* ///////////////////  GUZIK SKLEPU    ///////////////////*/
+
+input.dosklepu{
+	width: 100%; 
+	background:black; 
+	color:yellow; 
+	font-weight: bold;
+	cursor: pointer;
+	border: 2px solid yellow;
+	
+}
+
