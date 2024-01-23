@@ -1,0 +1,90 @@
+<?php
+    // początkowa wartość prędkości
+    $predkosc = 200;
+
+    // obsługa ustalania prędkości
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // czy przesłano wartość prędkości
+        if (isset($_POST['predkosc'])) {
+            // gdy mniejsza od zera ustaw 0
+            $predkosc = 0; 
+			// ustal nową prędkość gdy większa od 0
+            if (intval($_POST['predkosc']) >= 0) {
+                $predkosc = intval($_POST['predkosc']);
+            }
+        }
+   }
+   
+?>
+
+
+<table style="width:100%";>
+	<tr>
+	
+		<!-- formularz po lewej -->
+		<td style="width:25%">
+			<?php 
+				PokazKontakt();
+			?>
+		</td>
+		
+		<!-- gif patyczaka na środku -->
+		<td>
+			<p>
+				<img class="czysty" src="img/gsb.gif" style="position: absolute, text-align: center;" />
+			</p>
+		</td>
+		
+		<!-- Perpetuum Mobile Inator -->
+		<td style="width:25%";> 
+		
+			<!-- skrypt -->
+			<script>
+				function rozwininator() {
+					var perpetuumobileinatorometer = document.getElementById("perpetuumobileinatorometer");
+					perpetuumobileinatorometer.style.display = (perpetuumobileinatorometer.style.display === "none" || perpetuumobileinatorometer.style.display === "") ? "block" : "none";
+				}
+			</script>
+		
+			<div>
+
+				<h2 class="perpetuumobileinatorometer-napis" onclick="rozwininator()">Perpetuum Mobile Inator</h2>
+				
+				
+				<div class="perpetuumobileinatorometer perpetuumobileinator-hidden">
+					<span class="perpetuumobileinator-napis">Aktualna prędkość:</span>
+					<span><?php echo $predkosc; ?></span>
+				</div>
+
+				<form method="post" action="" class="perpetuumobileinator-input perpetuumobileinator-hidden">
+					<h2 class="perpetuumobileinatorometer-napis" for="predkosc">Wprowadź żądaną prędkość:
+					<input type="number" name="predkosc" id="predkosc" value="<?php echo $predkosc; ?>" required>
+					<button type="submit">Zatwierdź</button> </h2>
+				</form>
+
+			</div>
+
+					
+				<div id="animacjaTestowa2" style=" border:2px solid #c9930e; 
+				background: linear-gradient(45deg, #FF6347, #FFA500, #FFD700);" 
+				class="test-block"> = = = = = = = = =      = = = = = = = = = </div>
+				<script>
+					$("#animacjaTestowa2").on({
+						"mouseover" : function(){
+							$(this).animate({
+							width: 10
+							}, <?php echo "$predkosc "?>);
+						},
+						"mouseout" : function() {
+							$(this).animate({
+							width: 300
+							}, <?php echo "$predkosc "?>);
+						}
+					});
+				</script>	
+				
+			
+		</td>
+		
+	</tr>
+</table>
